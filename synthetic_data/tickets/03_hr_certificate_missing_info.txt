@@ -1,0 +1,11 @@
+From: diego.fernandez@example.com
+To: operations@fictitiousbank.example
+Subject: Employment certificate
+
+Hi,
+
+I need an employment certificate for a mortgage application. It should mention my
+current position and salary. Could you send it today?
+
+Thanks,
+Diego

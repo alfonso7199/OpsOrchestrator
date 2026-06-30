@@ -1,0 +1,17 @@
+IT ACCESS CONTROL POLICY
+Fictitious Bank Operations (synthetic document for demo)
+
+IT-1. Access requests.
+Access to operational systems must include requester identity, manager, cost
+center, target system, requested role and business justification.
+
+IT-2. Standard role approval.
+Standard roles listed in the access catalog may be approved by the line manager
+and fulfilled by IT Service Desk.
+
+IT-3. Privileged access.
+Privileged or admin roles require Security approval and must be time-bound.
+
+IT-4. Same-day urgency.
+Urgent same-day access can be expedited only when manager and cost center are
+present and the role is standard.

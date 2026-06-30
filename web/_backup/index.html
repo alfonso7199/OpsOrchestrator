@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OpsOrchestrator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#workbench">Skip to workbench</a>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-flow" viewBox="0 0 24 24"><path d="M6 7a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm12 4a3 3 0 1 0 0 6 3 3 0 0 0 0-6ZM9 10h4.5a3.5 3.5 0 0 1 3.5 3.5V14M6 13v4a2 2 0 0 0 2 2h7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-file" viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7V3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M14 3v5h5M9 13h6M9 17h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 4.8 2.8 8 7 10 4.2-2 7-5.2 7-10V6l-7-3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="m9 12 2 2 4-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-route" viewBox="0 0 24 24"><path d="M5 6h5a4 4 0 0 1 0 8h4a4 4 0 0 1 4 4M5 6l3-3M5 6l3 3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 13 4 4 10-10" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 4 3 20h18L12 4Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 10v4m0 3h.01" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+      <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 16V4m0 0 4 4m-4-4-4 4M5 20h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7L8 5Z" fill="currentColor"/></symbol>
+      <symbol id="i-lock" viewBox="0 0 24 24"><path d="M7 11V8a5 5 0 0 1 10 0v3M6 11h12v10H6V11Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+    </defs>
+  </svg>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark"><svg><use href="#i-flow"/></svg></span>
+      <div>
+        <strong>OpsOrchestrator</strong>
+        <span>Enterprise operations agent desk</span>
+      </div>
+    </div>
+    <div class="top-actions" aria-label="Runtime">
+      <span class="runtime-dot" aria-hidden="true"></span>
+      <span>Local demo</span>
+      <span class="divider"></span>
+      <span>OpenAI Agents SDK</span>
+    </div>
+  </header>
+
+  <main id="workbench" class="workbench">
+    <section class="mission" aria-labelledby="mission-title">
+      <div>
+        <p class="eyebrow">Track 2 &middot; Enterprise Operations</p>
+        <h1 id="mission-title">Turn back-office tickets into policy-compliant action plans.</h1>
+      </div>
+      <div class="scorebar" aria-label="Demo capabilities">
+        <div><span>4</span><small>demo queues</small></div>
+        <div><span>5</span><small>agent steps</small></div>
+        <div><span>100%</span><small>synthetic</small></div>
+      </div>
+    </section>
+
+    <div class="console">
+      <section class="pane intake-pane" aria-labelledby="intake-title">
+        <div class="pane-head">
+          <span class="pane-icon"><svg><use href="#i-file"/></svg></span>
+          <div>
+            <h2 id="intake-title">Work intake</h2>
+            <p>Select a queue item or paste a ticket.</p>
+          </div>
+        </div>
+
+        <fieldset class="example-field">
+          <legend>Demo queue</legend>
+          <div id="examples" class="chips" role="list"></div>
+        </fieldset>
+
+        <label for="text">Ticket body</label>
+        <textarea id="text" rows="10" placeholder="Paste an operations ticket here..." aria-describedby="input-help"></textarea>
+        <p id="input-help" class="form-help">The run uses synthetic tickets, policies and employee data.</p>
+
+        <label class="file-drop" for="files">
+          <svg><use href="#i-upload"/></svg>
+          <span>Add ticket files</span>
+          <small>.txt, .eml, .md</small>
+        </label>
+        <input id="files" type="file" multiple accept=".txt,.eml,.md" />
+        <ul id="file-list" class="file-list" aria-label="Selected files"></ul>
+
+        <button id="run" class="run-btn" type="button" disabled>
+          <svg><use href="#i-play"/></svg>
+          Run agent workflow
+        </button>
+        <p id="hint" class="hint" role="alert"></p>
+      </section>
+
+      <section class="pane trace-pane" aria-labelledby="trace-title">
+        <div class="pane-head">
+          <span class="pane-icon accent"><svg><use href="#i-route"/></svg></span>
+          <div>
+            <h2 id="trace-title">Agent trace</h2>
+            <p id="status" aria-live="polite">Waiting for a ticket.</p>
+          </div>
+        </div>
+
+        <ol id="timeline" class="timeline" aria-label="Workflow progress">
+          <li data-step="evidence"><span>Evidence intake</span><small>Ticket normalized</small></li>
+          <li data-step="classify"><span>Classify</span><small>Department and gaps</small></li>
+          <li data-step="policy"><span>Policy check</span><small>Controls with citations</small></li>
+          <li data-step="resolution"><span>Resolution</span><small>Route and response</small></li>
+          <li data-step="sop"><span>SOP</span><small>Reusable procedure</small></li>
+          <li data-step="ready"><span>Human review</span><small>Approve or reject</small></li>
+        </ol>
+
+        <div class="evidence-box">
+          <h3>Evidence</h3>
+          <ul id="evidence" class="evidence-list" aria-live="polite"></ul>
+        </div>
+      </section>
+
+      <section id="results" class="pane results-pane" aria-labelledby="results-title">
+        <div class="empty-state">
+          <span><svg><use href="#i-shield"/></svg></span>
+          <h2 id="results-title">Decision file</h2>
+          <p>Run a ticket to generate intake, policy citations, resolution draft, SOP and audit trail.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

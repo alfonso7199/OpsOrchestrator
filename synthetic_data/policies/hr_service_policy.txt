@@ -1,0 +1,14 @@
+HR SERVICE POLICY
+Fictitious Bank Operations (synthetic document for demo)
+
+HR-1. Employment certificates.
+Employment certificates can be issued by HR Operations after verifying employee
+identity, certificate purpose and whether salary disclosure is requested.
+
+HR-2. Salary disclosure.
+Certificates including salary require employee consent in writing and must be
+delivered to the employee, not directly to a third party.
+
+HR-3. Missing information.
+If purpose, delivery language, salary disclosure consent or employee identifier
+is missing, HR must request the missing data before issuing the certificate.

@@ -1,0 +1,18 @@
+FINANCE OPERATIONS CONTROL POLICY
+Fictitious Bank Operations (synthetic document for demo)
+
+FIN-1. Invoice matching.
+Invoices must match the purchase order amount, vendor and contract owner before
+payment can be released.
+
+FIN-2. Tolerance threshold.
+Differences up to 2,000 EUR may be approved by the business owner if budget is
+available.
+
+FIN-3. Material exception.
+Differences above 2,000 EUR require Finance Controller approval and Procurement
+confirmation before payment.
+
+FIN-4. Critical vendor handling.
+Critical vendor exceptions may be expedited, but the approval route cannot be
+skipped.

@@ -1,0 +1,16 @@
+From: lina.chen@example.com
+To: operations@fictitiousbank.example
+Subject: NDA review for fintech pilot
+
+Hi Ops,
+
+We received an NDA from BrightLedger for a fintech pilot. They want signature by
+Friday. The draft includes a 5-year confidentiality term, mutual obligations, and
+a clause requiring disputes in Delaware courts.
+
+Business sponsor: Digital Channels
+External party: BrightLedger Inc.
+Requested action: legal review and approval route.
+
+Thanks,
+Lina

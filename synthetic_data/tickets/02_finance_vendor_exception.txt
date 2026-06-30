@@ -1,0 +1,20 @@
+From: arun.mehra@example.com
+To: operations@fictitiousbank.example
+Subject: Vendor invoice exception - payment blocked
+
+Hello,
+
+Invoice INV-88421 from Northstar Analytics is blocked in AP because the purchase
+order has 91,300 EUR remaining but the invoice is for 96,800 EUR. The vendor is
+critical for the risk reporting project and is asking for payment this week.
+
+PO: PO-2026-33014
+Vendor: Northstar Analytics
+Invoice amount: 96,800 EUR
+PO remaining amount: 91,300 EUR
+Business owner: Clara Novak
+Contract owner: Procurement Analytics
+Requested action: approve exception or route it to the right approver.
+
+Regards,
+Arun

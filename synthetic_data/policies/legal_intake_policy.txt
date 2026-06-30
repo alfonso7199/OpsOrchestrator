@@ -1,0 +1,18 @@
+LEGAL INTAKE POLICY
+Fictitious Bank Operations (synthetic document for demo)
+
+LEG-1. Contract review intake.
+Contract review requests must include counterparty, business sponsor, document
+type, target signature date and unusual clauses.
+
+LEG-2. NDA standard path.
+Standard mutual NDAs with confidentiality terms up to 3 years can be approved by
+Legal Operations.
+
+LEG-3. Non-standard clauses.
+Foreign jurisdiction, terms above 3 years, unilateral obligations or unusual data
+sharing clauses require Legal Counsel review.
+
+LEG-4. Urgent review.
+Urgent reviews can be prioritized when business sponsor and signature deadline are
+present, but non-standard clauses still require counsel.
